@@ -4,7 +4,7 @@ import input from "../core/Input.js";
 import Player from "../player/Player.js";
 import CheckpointManager from "../managers/CheckpointManager.js";
 import Camera from "../scene/Camera.js";
-import TimelineDisplay from "../scene/TimelineDisplay.js";
+import TimelineDisplay from "../scene/timelineDisplay/TimelineDisplay.js";
 import HUD from "../ui/HUD.js";
 import eventManager from "../core/EventManager.js";
 import { clonePosition } from "../utils/utils.js";
@@ -103,7 +103,7 @@ class PlayingState extends BaseGameState {
       this.setTimeline(targetLevelIndex);
     }
 
-    console.log("teleporting to", selectedCheckpoint.position);
+    // console.log("teleporting to", selectedCheckpoint.position);
     this.camera.moveTo(
       selectedCheckpoint.position.x,
       selectedCheckpoint.position.y

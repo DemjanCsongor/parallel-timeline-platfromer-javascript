@@ -1,6 +1,6 @@
-import eventManager from "../core/EventManager.js";
-import input from "../core/Input.js";
-import canvasManager from "../core/CanvasManager.js";
+import eventManager from "../../core/EventManager.js";
+import input from "../../core/Input.js";
+import canvasManager from "../../core/CanvasManager.js";
 
 class TimelineDisplay {
   constructor({ checkpointManager, camera }) {
