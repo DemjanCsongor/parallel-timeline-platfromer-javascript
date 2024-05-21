@@ -1,4 +1,4 @@
-import { backButton } from "../ui/Button.js";
+import { backButton } from "../ui/Buttons/Buttons.js";
 import BaseGameState from "./BaseGameState.js";
 
 class OptionsState extends BaseGameState {

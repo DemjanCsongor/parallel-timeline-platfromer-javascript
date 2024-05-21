@@ -1,4 +1,4 @@
-import { continueButton, backToMenuButton } from "../ui/Button.js";
+import { continueButton, backToMenuButton } from "../ui/Buttons/Buttons.js";
 import BaseGameState from "./BaseGameState.js";
 
 class PauseState extends BaseGameState {

@@ -31,6 +31,7 @@ gameStateManager.switchToState("menu");
 
 const c = canvasManager.getContext();
 const canvas = canvasManager.getCanvas();
+const canvasScale = canvasManager.getCanvasScale();
 
 let secondsPassed, oldTimeStamp, fps;
 
@@ -47,8 +48,8 @@ function gameLoop(timeStamp) {
 
       fps = Math.round(1 / secondsPassed);
 
-      c.font = "25px Arial";
-      c.fillText("FPS: " + fps, 950, 30);
+      c.font = `${10 * canvasScale}px Arial`;
+      c.fillText("FPS: " + fps, canvas.width * 0.95, canvas.height * 0.05);
     }
   } catch (error) {
     console.error("Error during game loop:", error);
